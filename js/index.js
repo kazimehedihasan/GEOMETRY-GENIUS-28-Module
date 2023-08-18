@@ -47,8 +47,8 @@ function parallelogramAria(){
 //  console.log(height);
 
  const area = base * height;
- const kuka = document.getElementById('parallelogram-area');
- kuka.innerText = area;
+kaziMehediHasan ('parallelogram-area', area);
+
 }
 
 // reusable get input value field in number
@@ -57,4 +57,10 @@ function getInputValue(kuk){
     const inpute = input.value;
     const valuee = parseFloat(inpute);
     return valuee;
+}
+
+// reusable set apan , p, div, etc text
+function kaziMehediHasan (elementId, area){
+   const element = document.getElementById(elementId);
+   element.innerText = area;
 }
