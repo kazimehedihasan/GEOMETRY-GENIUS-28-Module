@@ -12,6 +12,11 @@ const heightValueText = heightField.value;
 const height = parseFloat(heightValueText);
 // console.log(height);
 
+// validate input : base and height
+if(isNaN(base) || isNaN(height)) {
+   alert('please insert a number');
+   return;
+}
 const area = 0.5 * base * height;
 // show tringle area
 const areaSpan = document.getElementById('triangle-area');
@@ -26,10 +31,14 @@ function mehedi(){
    const rectangleBase = parseFloat(rectangleText);
 //    console.log(rectangleBase);
 
+
+
    const I = document.getElementById('rectangle-height');
    const iValue = I.value;
    const iText = parseFloat(iValue);
 //    console.log(iText);
+
+
 
 //    calculate area
 const area = rectangleBase * iText;
